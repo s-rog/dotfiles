@@ -1,5 +1,6 @@
 export \
         TERM="xterm-256color" \
+        LS_COLORS="$(vivid generate snazzy)"
 
 alias \
         pip="python -m pip" \
