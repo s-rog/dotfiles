@@ -1,6 +1,6 @@
 export \
-    LS_COLORS="$(vivid generate snazzy)"
-    TERM="xterm-256color" \
+    LS_COLORS="$(vivid generate snazzy)" \
+    TERM="xterm-256color"
 alias \
     apt="sudo apt -qq" \
     cl="clear" \
@@ -8,11 +8,16 @@ alias \
     egrep="egrep --color=auto" \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
+    hist="history" \
     ls="ls --color=auto -h" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
+    rsrc="source ~/.zshrc" \
     rsync_bulk="rsync -rh --info=progress2 --no-i-r" \
     src="source" \
     untar="tar -zxvf" \
     vi="nvim" \
     watch="watch --color -n1"
+alias -g \
+    G="| grep" \
+    S="| sort"
