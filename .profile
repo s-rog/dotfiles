@@ -8,7 +8,7 @@ alias \
     egrep="egrep --color=auto" \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
-    ls="ls --color=auto -hl" \
+    ls="ls --color=auto -h" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
     rsync_bulk="rsync -rh --info=progress2 --no-i-r" \
