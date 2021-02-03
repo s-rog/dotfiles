@@ -63,6 +63,9 @@ autoload -Uz _zinit
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
 source ~/.profile
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
