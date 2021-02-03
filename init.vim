@@ -17,3 +17,5 @@ set scrolloff=10
 set ttimeoutlen=1
 
 syntax on
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
