@@ -20,4 +20,5 @@ alias \
     watch="watch --color -n1"
 alias -g \
     G="| grep" \
+    L="| less -N" \
     S="| sort"
