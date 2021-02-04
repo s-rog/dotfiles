@@ -8,7 +8,7 @@ alias \
     egrep="egrep --color=auto" \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
-    hist="history" \
+    hist="history 1" \
     ls="ls --color=auto -h" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
