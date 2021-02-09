@@ -15,6 +15,7 @@ alias \
     rsrc="source ~/.zshrc" \
     rsync_bulk="rsync -rh --info=progress2 --no-i-r" \
     src="source" \
+    tb="tensorboard --bind_all --logdir ." \
     untar="tar -zxvf" \
     vi="nvim" \
     watch="watch --color -n1"
