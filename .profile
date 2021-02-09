@@ -1,4 +1,5 @@
 export \
+    EDITOR="nvim" \
     LS_COLORS="$(vivid generate snazzy)" \
     TERM="xterm-256color"
 alias \
@@ -9,7 +10,7 @@ alias \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
     hist="history 1" \
-    ls="ls --color=auto -h" \
+    ls="ls --color=auto -hp" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
     rsrc="source ~/.zshrc" \
@@ -21,5 +22,7 @@ alias \
     watch="watch --color -n1"
 alias -g \
     G="| grep" \
-    L="| less -N" \
-    S="| sort"
+    L="| less" \
+    S="| sort" \
+    WC="| wc" \
+    WCL="| wc -l"
