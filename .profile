@@ -5,12 +5,16 @@ export \
 alias \
     apt="sudo apt -qq" \
     cl="clear" \
-    colortest='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+"\n"}; done' \
+    colortest="for i in {0..255}; do print -Pn '%K{$i}  %k%F{$i}${(l:3::0:)i}%f ' ${${(M)$((i%6)):#3}:+'\n'}; done" \
+    countdh="ls -Al | grep -c ^d" \
+    countd="ls -l | grep -c ^d" \
+    countfh="ls -Al | grep -c ^-" \
+    countf="ls -l | grep -c ^-" \
     egrep="egrep --color=auto" \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
     hist="history 1" \
-    ls="ls --color=auto -hp" \
+    ls="ls --color=auto -h" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
     rsrc="source ~/.zshrc" \
@@ -25,4 +29,3 @@ alias -g \
     L="| less" \
     S="| sort" \
     WC="| wc" \
-    WCL="| wc -l"
