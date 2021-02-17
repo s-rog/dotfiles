@@ -14,7 +14,7 @@ alias \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
     hist="history 1" \
-    ls="ls --color=auto -h" \
+    ls="ls --color --group-directories-first -h" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
     rsrc="source ~/.zshrc" \
