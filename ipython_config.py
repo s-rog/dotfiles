@@ -29,7 +29,7 @@
 ## List of files to run at IPython startup.
 #  Default: []
 import os
-c.InteractiveShellApp.exec_files = [os.path.expanduser("~/.ipy_init.py")]
+c.InteractiveShellApp.exec_files = [os.path.expanduser("~/.ipython/profile_default/ipy_init.py")]
 
 ## lines of code to run at IPython startup.
 #  Default: []
