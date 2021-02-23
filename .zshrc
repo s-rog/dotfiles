@@ -65,12 +65,13 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.config/sh/.p10k.zsh ]] || source ~/.config/sh/.p10k.zsh
-[ -f ~/.config/sh/.fzf.zsh ] && source ~/.config/sh/.fzf.zsh
+source ~/.config/sh/.p10k.zsh
+source ~/.config/sh/.fzf.zsh
+source ~/.config/sh/.profile
+source ~/.config/lf/lfcd.sh
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
-source ~/.config/sh/.profile
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting

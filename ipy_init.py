@@ -4,7 +4,7 @@ import multiprocessing as mp
 import os
 from pathlib import Path
 
-import ipyplot
+import ipyplot as iplt
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
