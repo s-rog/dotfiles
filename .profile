@@ -6,17 +6,15 @@ export \
     TERM="xterm-256color"
 alias \
     apt="sudo apt -qq" \
-    cat="batcat" \
+    bat="batcat" \
     cl="clear" \
-    colortest="for i in {0..255}; do print -Pn '%K{$i}  %k%F{$i}${(l:3::0:)i}%f ' ${${(M)$((i%6)):#3}:+'\n'}; done" \
+    conda="sudo conda" \
     countdh="ls -Al | grep -c ^d" \
     countd="ls -l | grep -c ^d" \
     countfh="ls -Al | grep -c ^-" \
     countf="ls -l | grep -c ^-" \
     fd="fdfind" \
-    egrep="egrep --color=auto" \
-    fgrep="fgrep --color=auto" \
-    grep="grep --color=auto" \
+    grep="grep --color" \
     hist="history 1" \
     ls="ls --color --group-directories-first -h" \
     mkdir="mkdir -pv" \
@@ -29,7 +27,7 @@ alias \
     vi="nvim" \
     watch="watch --color -n1"
 alias -g \
-    C="| batcat" \
+    B="| batcat" \
     G="| grep" \
     S="| sort" \
     WC="| wc"
