@@ -81,7 +81,7 @@ c.InteractiveShellApp.extensions = ['autoreload']
 ## Configure matplotlib for interactive use with the default matplotlib backend.
 #  Choices: any of ['auto', 'agg', 'gtk', 'gtk3', 'inline', 'ipympl', 'nbagg', 'notebook', 'osx', 'pdf', 'ps', 'qt', 'qt4', 'qt5', 'svg', 'tk', 'widget', 'wx'] (case-insensitive) or None
 #  Default: None
-c.InteractiveShellApp.matplotlib = 'ipympl'
+# c.InteractiveShellApp.matplotlib = 'ipympl'
 
 ## Run the module as a script.
 #  Default: ''
@@ -281,7 +281,7 @@ c.InteractiveShellApp.matplotlib = 'ipympl'
 
 ## Configure matplotlib for interactive use with
 #  See also: InteractiveShellApp.matplotlib
-c.TerminalIPythonApp.matplotlib = 'auto'
+# c.TerminalIPythonApp.matplotlib = 'auto'
 
 ## Run the module as a script.
 #  See also: InteractiveShellApp.module_to_run

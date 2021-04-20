@@ -17,10 +17,10 @@ alias \
     hist="history 1" \
     ls="ls --color --group-directories-first -h" \
     mkdir="mkdir -pv" \
-    pip="python -m pip" \
+    pip="sudo python -m pip" \
     rsync_bulk="rsync -rh --info=progress2 --no-i-r" \
     src="source" \
-    tb="tensorboard --bind_all --logdir ." \
+    tb="tensorboard --bind_all --logdir . --samples_per_plugin "images=100"" \
     untar="tar -zxvf" \
     vi="nvim" \
     watch="watch --color -n1"
@@ -28,4 +28,5 @@ alias -g \
     B="| batcat" \
     G="| grep" \
     S="| sort" \
-    WC="| wc"
+    WC="| wc" \
+    X="| xargs"

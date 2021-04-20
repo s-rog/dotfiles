@@ -5,7 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 # Set up the prompt
 autoload -Uz promptinit
 promptinit
@@ -13,8 +12,6 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
-# bindkey -e
 bindkey -v
 export KEYTIMEOUT=1
 bindkey "^?" backward-delete-char
@@ -48,30 +45,28 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 declare -A ZINIT
-ZINIT=(["HOME_DIR"]="$HOME/.bin/zinit")
+ZINIT=(["HOME_DIR"]="$HOME/.local/zinit")
 
 ### Added by Zinit's installer
-if [[ ! -f $HOME/.bin/zinit/bin/zinit.zsh ]]; then
+if [[ ! -f $HOME/.local/zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
     command mkdir -p "$HOME/.bin/zinit" && command chmod g-rwX "$HOME/.bin/zinit"
     command git clone https://github.com/zdharma/zinit "$HOME/.bin/zinit/bin" && \
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
-
-source "$HOME/.bin/zinit/bin/zinit.zsh"
+source "$HOME/.local/zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/.config/sh/.p10k.zsh
-source ~/.config/sh/.fzf.zsh
-source ~/.config/sh/.profile
-source ~/.config/lf/lfcd.sh
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+source ~/.config/lf/lfcd.sh
+source ~/.config/sh/.fzf.zsh
+source ~/.config/sh/.p10k.zsh
+source ~/.profile
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions

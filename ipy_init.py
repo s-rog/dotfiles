@@ -14,4 +14,5 @@ from tqdm.auto import tqdm
 plt.style.use("dark_background")
 pd.options.display.width = None
 pd.options.display.max_columns = 100
+pd.options.display.max_colwidth = 200
 pd.options.display.max_rows = 300
