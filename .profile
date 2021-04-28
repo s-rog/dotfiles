@@ -3,6 +3,7 @@ export \
     FZF_DEFAULT_COMMAND="fdfind --type file" \
     FZF_DEFAULT_OPTS="--layout=reverse --inline-info --height 30%" \
     LS_COLORS="$(vivid generate snazzy)" \
+    PATH=PATH:"$PATH:$HOME/.local/bin" \
     TERM="xterm-256color"
 alias \
     apt="sudo apt -qq" \
@@ -13,6 +14,8 @@ alias \
     countfh="ls -Al | grep -c ^-" \
     countf="ls -l | grep -c ^-" \
     fd="fdfind" \
+    gd="git diff" \
+    gs="git status" \
     grep="grep --color" \
     hist="history 1" \
     ls="ls --color --group-directories-first -h" \
@@ -22,6 +25,8 @@ alias \
     src="source" \
     tb="tensorboard --bind_all --logdir . --samples_per_plugin "images=100"" \
     untar="tar -zxvf" \
+    update_fzf="git -C "~/.local/fzf" pull && bash ~/.local/fzf/install && mv ~/.fzf.zsh ~/.config/sh/ && rm -f ~/.fzf.bash" \
+    update_lf="curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin" \
     vi="nvim" \
     watch="watch --color -n1"
 alias -g \
