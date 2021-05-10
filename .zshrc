@@ -64,8 +64,7 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 source ~/.config/lf/lfcd.sh
-source ~/.config/sh/.fzf.zsh
-source ~/.config/sh/.p10k.zsh
+source ~/.config/p10k/.p10k.zsh
 source ~/.profile
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-completions
@@ -73,3 +72,5 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light agkozak/zsh-z
 zinit light Aloxaf/fzf-tab
 zinit light zdharma/fast-syntax-highlighting
+
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh

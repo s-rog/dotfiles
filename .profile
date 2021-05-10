@@ -4,8 +4,11 @@ export \
     FZF_DEFAULT_OPTS="--layout=reverse --inline-info --height 30%" \
     LS_COLORS="$(vivid generate snazzy)" \
     PATH=PATH:"$PATH:$HOME/.local/bin" \
-    TERM="xterm-256color"
+    TERM="xterm-256color" \
+    XDG_CONFIG_HOME="$HOME/.config"
 alias \
+    ..="cd .." \
+    ...="cd ../.." \
     apt="sudo apt -qq" \
     bat="batcat" \
     cl="clear" \
@@ -14,6 +17,7 @@ alias \
     countfh="ls -Al | grep -c ^-" \
     countf="ls -l | grep -c ^-" \
     fd="fdfind" \
+    gc="git commit" \
     gd="git diff" \
     gs="git status" \
     grep="grep --color" \
@@ -25,7 +29,7 @@ alias \
     src="source" \
     tb="tensorboard --bind_all --logdir . --samples_per_plugin "images=100"" \
     untar="tar -zxvf" \
-    update_fzf="git -C "~/.local/fzf" pull && bash ~/.local/fzf/install && mv ~/.fzf.zsh ~/.config/sh/ && rm -f ~/.fzf.bash" \
+    update_fzf="git -C ~/.local/fzf pull && bash ~/.local/fzf/install --all --xdg --no-bash --no-fish" \
     update_lf="curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin" \
     vi="nvim" \
     watch="watch --color -n1"
