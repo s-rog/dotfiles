@@ -12,12 +12,12 @@ alias \
     apt="sudo apt -qq" \
     bat="batcat" \
     cl="clear" \
-    countdh="ls -Al | grep -c ^d" \
     countd="ls -l | grep -c ^d" \
-    countfh="ls -Al | grep -c ^-" \
     countf="ls -l | grep -c ^-" \
+    countdh="ls -Al | grep -c ^d" \
+    countfh="ls -Al | grep -c ^-" \
+    du="du -sh" \
     fd="fdfind" \
-    gc="git commit" \
     gd="git diff" \
     gs="git status" \
     grep="grep --color" \
@@ -26,8 +26,8 @@ alias \
     mkdir="mkdir -pv" \
     pip="sudo python -m pip" \
     rsync="rsync -rh --info=progress2 --no-i-r" \
-    sudo="sudo " \
     src="source" \
+    sudo="sudo " \
     tb="tensorboard --bind_all --logdir . --samples_per_plugin "images=100"" \
     untar="tar -zxvf" \
     update="update_fzf && update_lf && zinit update --all" \
