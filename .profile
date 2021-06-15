@@ -18,7 +18,9 @@ alias \
     countfh="ls -Al | grep -c ^-" \
     du="du -sh" \
     fd="fdfind" \
+    gc="git commit -m" \
     gd="git diff" \
+    gl="git log" \
     gs="git status" \
     grep="grep --color" \
     hist="history 1" \
