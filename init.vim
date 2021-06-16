@@ -13,6 +13,7 @@ set cursorline
 set ls=2
 set nowrap
 set number
+set relativenumber
 set scrolloff=10
 set showmatch
 set ttimeoutlen=1
