@@ -20,10 +20,6 @@ alias \
     du="du -sh" \
     fd="fdfind" \
     g="git" \
-    gc="git commit -m" \
-    gd="git diff" \
-    gl="git log" \
-    gs="git status" \
     grep="grep --color" \
     hist="history 1" \
     ls="ls --color --group-directories-first -h" \
