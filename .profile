@@ -9,6 +9,7 @@ export \
 alias \
     ..="cd .." \
     ...="cd ../.." \
+    ....="cd ../../.." \
     apt="sudo apt -qq" \
     bat="batcat" \
     cl="clear" \
@@ -18,6 +19,7 @@ alias \
     countfh="ls -Al | grep -c ^-" \
     du="du -sh" \
     fd="fdfind" \
+    g="git" \
     gc="git commit -m" \
     gd="git diff" \
     gl="git log" \
