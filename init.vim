@@ -19,6 +19,8 @@ set showmatch
 set ttimeoutlen=1
 set undolevels=1000
 
+set mouse=a
+
 syntax on
 
 highlight ColorColumn ctermbg=blue
