@@ -22,9 +22,10 @@ alias \
     g="git" \
     grep="grep --color" \
     hist="history 1" \
-    ls="ls --color --group-directories-first -h" \
+    ls="ls --color --group-directories-first -h -Al" \
     mkdir="mkdir -pv" \
-    pip="sudo python -m pip" \
+    pip="python -m pip" \
+    py="python" \
     rsync="rsync -rh --info=progress2 --no-i-r" \
     src="source" \
     sudo="sudo " \
@@ -34,6 +35,10 @@ alias \
     update_fzf="git -C ~/.local/fzf pull && bash ~/.local/fzf/install --all --xdg --no-bash --no-fish" \
     update_lf="curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin" \
     vi="nvim" \
+    venter="source .venv/bin/activate" \
+    vexit="deactivate" \
+    vmake="virtualenv .venv" \
+    vreset="vexit && rm -rf .venv poetry.lock && vmake && venter && poetry update" \
     watch="watch --color -n1"
 alias -g \
     B="| batcat" \
