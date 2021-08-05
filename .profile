@@ -22,14 +22,14 @@ alias \
     g="git" \
     grep="grep --color" \
     hist="history 1" \
-    ls="ls --color --group-directories-first -h -Al" \
+    ls="ls --color --group-directories-first -hAl" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
     py="python" \
     rsync="rsync -rh --info=progress2 --no-i-r" \
     src="source" \
     sudo="sudo " \
-    tb="tensorboard --bind_all --logdir . --samples_per_plugin "images=100"" \
+    tb="tensorboard --bind_all --logdir . --samples_per_plugin 'images=100'" \
     untar="tar -zxvf" \
     update="update_fzf && update_lf && zinit update --all" \
     update_fzf="git -C ~/.local/fzf pull && bash ~/.local/fzf/install --all --xdg --no-bash --no-fish" \
