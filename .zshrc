@@ -55,7 +55,7 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 export KEYTIMEOUT=1
-setopt histignorealldups sharehistory
+setopt histignorealldups sharehistory extendedhistory
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
@@ -72,7 +72,6 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 zinit light agkozak/zsh-z
 zinit light Aloxaf/fzf-tab
-
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
 
 bindkey "$terminfo[kcuu1]" history-substring-search-up

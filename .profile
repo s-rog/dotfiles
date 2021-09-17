@@ -21,7 +21,7 @@ alias \
     fd="fdfind" \
     g="git" \
     grep="grep --color" \
-    hist="history 1" \
+    hist="history -E -100" \
     ls="ls --color --group-directories-first -hAl" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
@@ -31,9 +31,9 @@ alias \
     sudo="sudo " \
     tb="tensorboard --bind_all --logdir . --samples_per_plugin 'images=100'" \
     untar="tar -zxvf" \
-    update="update_fzf && update_lf && zinit update --all" \
     update_fzf="git -C ~/.local/fzf pull && bash ~/.local/fzf/install --all --xdg --no-bash --no-fish" \
     update_lf="curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin" \
+    update_local="update_fzf && update_lf && zinit update --all" \
     vi="nvim" \
     venter="source .venv/bin/activate" \
     vexit="deactivate" \
