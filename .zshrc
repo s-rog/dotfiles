@@ -70,6 +70,11 @@ zinit light romkatv/powerlevel10k
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-history-substring-search
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 zinit light agkozak/zsh-z
 zinit light Aloxaf/fzf-tab
 
