@@ -10,12 +10,6 @@ autoload -Uz promptinit
 promptinit
 prompt adam1
 
-setopt histignorealldups sharehistory
-
-bindkey -v
-export KEYTIMEOUT=1
-bindkey "^?" backward-delete-char
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -60,9 +54,14 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+export KEYTIMEOUT=1
+setopt histignorealldups sharehistory
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+bindkey -v
+bindkey "^?" backward-delete-char
+
 source ~/.config/lf/lfcd.sh
 source ~/.config/p10k/.p10k.zsh
 source ~/.profile
@@ -71,11 +70,12 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
 zinit light agkozak/zsh-z
 zinit light Aloxaf/fzf-tab
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
+
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
