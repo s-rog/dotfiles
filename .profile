@@ -22,7 +22,7 @@ alias \
     g="git" \
     grep="grep --color" \
     hist="history -E -100" \
-    ls="ls --color --group-directories-first -hAl" \
+    ls="ls --color --group-directories-first -hl" \
     mkdir="mkdir -pv" \
     pip="python -m pip" \
     py="python" \
