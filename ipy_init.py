@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import rich
+from rich import pretty
 from rich import print
 from sidecar import Sidecar as sc
 from tqdm.auto import tqdm
@@ -19,4 +20,4 @@ pd.options.display.width = None
 pd.options.display.max_columns = 100
 pd.options.display.max_colwidth = 200
 pd.options.display.max_rows = 300
-rich.pretty.install()
+pretty.install()

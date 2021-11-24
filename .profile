@@ -33,7 +33,7 @@ alias \
     untar="tar -zxvf" \
     update_fzf="git -C ~/.local/fzf pull && bash ~/.local/fzf/install --all --xdg --no-bash --no-fish" \
     update_lf="curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin" \
-    update_local="update_fzf && update_lf && zinit update --all" \
+    update_local="update_fzf && update_lf && zinit update --all --parallel" \
     vi="nvim" \
     venter="source .venv/bin/activate" \
     vexit="deactivate" \
