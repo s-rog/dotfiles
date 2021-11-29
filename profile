@@ -31,9 +31,9 @@ alias \
     sudo="sudo " \
     tb="tensorboard --bind_all --logdir . --samples_per_plugin 'images=100'" \
     untar="tar -zxvf" \
-    update_fzf="git -C ~/.local/fzf pull && bash ~/.local/fzf/install --all --xdg --no-bash --no-fish" \
+    update_fzf="git -C ~/.local/share/fzf pull && bash ~/.local/share/fzf/install --all --xdg --no-bash --no-fish" \
     update_lf="curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin" \
-    update_local="update_fzf && update_lf && zinit update --all --parallel" \
+    update_local="update_fzf && update_lf && zinit update" \
     vi="nvim" \
     venter="source .venv/bin/activate" \
     vexit="deactivate" \
