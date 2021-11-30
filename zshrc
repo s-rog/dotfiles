@@ -38,9 +38,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-source "$XDG_CONFIG_HOME/fzf/fzf.zsh"
+source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
 source "$XDG_CONFIG_HOME/lf/lfcd.sh"
 source ~/.p10k.zsh
 source ~/.alias
-
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
