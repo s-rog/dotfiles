@@ -10,9 +10,6 @@ export \
     XDG_CONFIG_HOME="$HOME/.config" \
     XDG_DATA_HOME="$HOME/.local/share"
 
-ZINIT_HOME="$XDG_DATA_HOME/zinit/zinit.git"
-source "$ZINIT_HOME/zinit.zsh"
-
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
@@ -26,6 +23,11 @@ zstyle ':completion:*:descriptions' format '[%d]'
 setopt histignorealldups sharehistory extendedhistory
 bindkey -v
 bindkey "^?" backward-delete-char
+
+ZINIT_HOME="$XDG_DATA_HOME/zinit/zinit.git"
+source "$ZINIT_HOME/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
 zinit light Aloxaf/fzf-tab
 zinit light agkozak/zsh-z
