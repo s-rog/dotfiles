@@ -10,9 +10,7 @@ export \
     XDG_CONFIG_HOME="$HOME/.config" \
     XDG_DATA_HOME="$HOME/.local/share"
 
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
+HISTSIZE=10000 && SAVEHIST=10000 && HISTFILE=~/.zsh_history
 autoload -U edit-command-line && zle -N edit-command-line && bindkey -M vicmd v edit-command-line
 autoload -Uz compinit && compinit
 zstyle ':completion:*' completer _extensions _complete _approximate
@@ -30,10 +28,10 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 zinit light Aloxaf/fzf-tab
-zinit light agkozak/zsh-z
 zinit light romkatv/powerlevel10k
 zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zsh-users/zsh-history-substring-search
+zinit load agkozak/zsh-z
+zinit load zsh-users/zsh-history-substring-search
 
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
