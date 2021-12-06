@@ -23,3 +23,4 @@ c.InteractiveShellApp.exec_lines = [
     "pd.options.display.max_rows = 300",
     "pretty.install()",
 ]
+c.Completer.use_jedi = False
