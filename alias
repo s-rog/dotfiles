@@ -28,9 +28,10 @@ alias \
     update_local="update_fzf && update_lf && zinit update" \
     vi="nvim" \
     venter="source .venv/bin/activate" \
+    venv="virtualenv" \
     vexit="deactivate" \
-    vmake="virtualenv .venv" \
-    vreset="vexit && rm -rf .venv poetry.lock && vmake && venter && poetry update" \
+    vmake="venv .venv --download --activators bash,python" \
+    vreset="rm -f poetry.lock && vmake --clear && venter && poetry update" \
     watch="watch --color -n1"
 alias -g \
     B="| batcat" \

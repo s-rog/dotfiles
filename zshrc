@@ -18,7 +18,7 @@ zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:descriptions' format '[%d]'
-setopt histignorealldups sharehistory extendedhistory
+setopt histignorealldups sharehistory extendedhistory hist_verify
 bindkey -v
 bindkey "^?" backward-delete-char
 
