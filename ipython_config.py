@@ -22,5 +22,6 @@ c.InteractiveShellApp.exec_lines = [
     "pd.options.display.max_colwidth = 200",
     "pd.options.display.max_rows = 300",
     "pretty.install()",
+    "tqdm.pandas()",
 ]
 c.Completer.use_jedi = False

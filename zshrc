@@ -26,6 +26,8 @@ ZINIT_HOME="$XDG_DATA_HOME/zinit/zinit.git"
 source "$ZINIT_HOME/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
+autoload -U bashcompinit && bashcompinit
+eval "$(register-python-argcomplete pipx)"
 
 zinit light Aloxaf/fzf-tab
 zinit light romkatv/powerlevel10k
