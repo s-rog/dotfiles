@@ -5,7 +5,7 @@ c.InteractiveShellApp.exec_lines = [
     "import math",
     "import multiprocessing as mp",
     "import os",
-    "import random",
+    #"import random",
     "from pathlib import Path",
     "import ipyplot as iplt",
     "import matplotlib.pyplot as plt",
